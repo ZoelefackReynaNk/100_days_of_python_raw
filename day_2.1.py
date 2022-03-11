@@ -1,10 +1,10 @@
-file = open("/usercode/files/books.txt", "r")
+file = open("books.txt", "r")
 
-#your code goes here
 bl = file.readlines()
 code1 = [ ]
 code2 = [ ]
 code3 = [ ]
+
 for text in bl:
     if text != ' ' and text != bl[len(bl)-1]:
         code1.append(len(text)-1)
@@ -19,5 +19,5 @@ for i in range(len(code1)):
     
 for code in code3:
     print(code)
-    
+
 file.close()
